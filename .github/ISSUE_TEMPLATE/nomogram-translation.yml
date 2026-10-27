@@ -4,7 +4,7 @@
 name: "Nomogram: translation problem"
 description: Something in Nomogram reads wrong, unclear or awkward in your language, or you have a better way to say it.
 title: "[language] "
-labels: ["nomogram", "translation"]
+labels: ["Nomogram", "Translation"]
 body:
   - type: markdown
     attributes:

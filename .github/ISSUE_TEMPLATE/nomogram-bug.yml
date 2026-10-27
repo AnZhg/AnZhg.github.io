@@ -2,7 +2,7 @@
 # anzhg.github.io/nomogram/report/bug/ forwards here; version and macos are the ids a link may fill in.
 name: "Nomogram: bug"
 description: Nomogram did something wrong, crashed, or did not do what you expected.
-labels: ["nomogram", "bug"]
+labels: ["Nomogram", "bug"]
 body:
   - type: markdown
     attributes:
