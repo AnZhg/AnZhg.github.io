@@ -1,6 +1,6 @@
 # Created by Claude (Opus 5.5) on 2026-10-26.
 #
-# Writes strings/<language>.md, one table a language of every string Nomogram shows: the English, the translation, and
+# Writes nomogram/translations/<language>.md, one table a language of every string Nomogram shows: the English, the translation, and
 # where it shows, from the app's string catalogs. Run it after the catalogs change:
 #
 #   python3 -I tools/strings_tables.py <path to the Nomogram repository>
@@ -33,10 +33,10 @@ for path in CATALOGS:
         english = text(localizations.get("en")) or key
         where = "Menu bar" if path.endswith("MainMenu.xcstrings") else entry.get("comment", "").split("\n")[0]
         rows.append((english, where, localizations))
-os.makedirs(os.path.join(here, "strings"), exist_ok=True)
+out = os.path.join(here, "nomogram", "translations")
 for language, name in NAMES.items():
-    lines = [f"# {name} (`{language}`)", "", "Every string Nomogram shows, with where it shows. To suggest better words, [open the form](https://github.com/AnZhg/nomogram-translations/issues/new?template=translation.yml).", "", "| English | " + name + " | Where |", "|---|---|---|"]
+    lines = [f"# {name} (`{language}`)", "", f"Every string Nomogram shows, with where it shows. To suggest better words, [open the form](../report/translation/?language={language}).", "", "| English | " + name + " | Where |", "|---|---|---|"]
     for english, where, localizations in rows:
         lines.append(f"| {cell(english)} | {cell(text(localizations.get(language)))} | {cell(where)} |")
-    open(os.path.join(here, "strings", f"{language}.md"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
+    open(os.path.join(out, f"{language}.md"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
     print(language, len(rows), "strings")

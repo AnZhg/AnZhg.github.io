@@ -1,9 +1,10 @@
 # Created by Claude (Opus 5.5) on 2026-10-26.
-# Nomogram's Help > Report a Translation Problem… opens this form with language, version and macos filled in (their ids).
-name: Translation problem
+# anzhg.github.io/nomogram/report/translation/, which Nomogram's Help > Report a Translation Problem… opens, forwards here
+# with language, version and macos filled in (their ids).
+name: "Nomogram: translation problem"
 description: Something in Nomogram reads wrong, unclear or awkward in your language, or you have a better way to say it.
 title: "[language] "
-labels: ["translation"]
+labels: ["nomogram", "translation"]
 body:
   - type: markdown
     attributes:

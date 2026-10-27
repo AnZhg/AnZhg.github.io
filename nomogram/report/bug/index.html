@@ -1,0 +1,11 @@
+<!doctype html>
+<!-- Created by Claude (Opus 5.5) on 2026-10-26. -->
+<!-- Forwards to Nomogram's bug form, passing on the query (version and macos, the form's field ids, when an app sends them). -->
+<meta charset="utf-8">
+<title>Report a bug in Nomogram</title>
+<script>
+    var query = new URLSearchParams(location.search);
+    query.set("template", "nomogram-bug.yml");
+    location.replace("https://github.com/AnZhg/AnZhg.github.io/issues/new?" + query.toString());
+</script>
+<p><a href="https://github.com/AnZhg/AnZhg.github.io/issues/new?template=nomogram-bug.yml">Open the form to report a bug</a></p>

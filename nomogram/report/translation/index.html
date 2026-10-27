@@ -1,0 +1,14 @@
+<!doctype html>
+<!-- Created by Claude (Opus 5.5) on 2026-10-26. -->
+<!-- Nomogram's Help > Report a Translation Problem… opens this page with language, version and macos in the query;
+     it forwards them to the issue form, whose fields have those ids. -->
+<meta charset="utf-8">
+<title>Report a translation problem in Nomogram</title>
+<script>
+    var query = new URLSearchParams(location.search);
+    query.set("template", "nomogram-translation.yml");
+    if (query.has("language") && !query.has("title"))
+        query.set("title", "[" + query.get("language") + "] ");
+    location.replace("https://github.com/AnZhg/AnZhg.github.io/issues/new?" + query.toString());
+</script>
+<p><a href="https://github.com/AnZhg/AnZhg.github.io/issues/new?template=nomogram-translation.yml">Open the form to report a translation problem</a></p>

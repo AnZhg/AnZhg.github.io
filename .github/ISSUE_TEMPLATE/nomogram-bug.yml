@@ -1,0 +1,39 @@
+# Created by Claude (Opus 5.5) on 2026-10-26.
+# anzhg.github.io/nomogram/report/bug/ forwards here; version and macos are the ids a link may fill in.
+name: "Nomogram: bug"
+description: Nomogram did something wrong, crashed, or did not do what you expected.
+labels: ["nomogram", "bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting. One problem per report, please. A translation problem has a form of its own.
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: What you saw. A screenshot helps.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen
+      description: From opening Nomogram, as exactly as you can. If it happens with one document, attach it, zipped.
+      placeholder: |
+        1. Open a new document.
+        2. Drag a Loop onto the chart.
+        3. …
+  - type: input
+    id: version
+    attributes:
+      label: Nomogram version
+      description: Nomogram > About Nomogram.
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version

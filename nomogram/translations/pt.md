@@ -1,6 +1,6 @@
 # Portuguese (Brazil) (`pt`)
 
-Every string Nomogram shows, with where it shows. To suggest better words, [open the form](https://github.com/AnZhg/nomogram-translations/issues/new?template=translation.yml).
+Every string Nomogram shows, with where it shows. To suggest better words, [open the form](../report/translation/?language=pt).
 
 | English | Portuguese (Brazil) | Where |
 |---|---|---|
