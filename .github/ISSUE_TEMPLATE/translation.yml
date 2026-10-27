@@ -1,0 +1,50 @@
+# Created by Claude (Opus 5.5) on 2026-10-26.
+# Nomogram's Help > Report a Translation Problem… opens this form with language, version and macos filled in (their ids).
+name: Translation problem
+description: Something in Nomogram reads wrong, unclear or awkward in your language, or you have a better way to say it.
+title: "[language] "
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping Nomogram speak your language. Only the Chinese has been reviewed so far; the other
+        languages were drafted and wait for people like you. One problem per report, please.
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: Filled in when you report from the app's Help menu, such as de, ja or zh-Hant.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where in the app
+      description: The menu, window or pane where you saw it.
+      placeholder: The inspector of a loop, its Kind pop-up
+  - type: textarea
+    id: current
+    attributes:
+      label: What the app says now
+      description: Copy it as it appears, or describe it. A screenshot helps too.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What it should say
+      description: Your suggestion, if you have one. Keep anything that is Swift code, such as var, for or x > 0, as it is.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Optional. What is wrong with it now, or what your suggestion makes clearer.
+  - type: input
+    id: version
+    attributes:
+      label: Nomogram version
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
