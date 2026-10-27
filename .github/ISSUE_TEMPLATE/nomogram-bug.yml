@@ -1,5 +1,6 @@
 # Created by Claude (Opus 5.5) on 2026-10-26.
-# anzhg.github.io/nomogram/report/bug/ forwards here; version and macos are the ids a link may fill in.
+# anzhg.github.io/nomogram/report/bug/, which Nomogram's Help > Report a Bug… opens, forwards here with version and macos
+# filled in (their ids).
 name: "Nomogram: bug"
 description: Nomogram did something wrong, crashed, or did not do what you expected.
 labels: ["Nomogram", "bug"]
@@ -32,7 +33,7 @@ body:
     id: version
     attributes:
       label: Nomogram version
-      description: Nomogram > About Nomogram.
+      description: Filled in when you report from Nomogram's Help menu; otherwise, see Nomogram > About Nomogram.
   - type: input
     id: macos
     attributes:

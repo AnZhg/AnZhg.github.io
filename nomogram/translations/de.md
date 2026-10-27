@@ -49,6 +49,7 @@ Every string Nomogram shows, with where it shows. To suggest better words, [open
 | Help | Hilfe | Menu bar |
 | Help | Hilfe | Menu bar |
 | Report a Translation Problem… | Übersetzungsfehler melden … | Menu bar |
+| Report a Bug… | Fehler melden … | Menu bar |
 | Program | Programm | Menu bar |
 | Program | Programm | Menu bar |
 | Run | Ausführen | Menu bar |
