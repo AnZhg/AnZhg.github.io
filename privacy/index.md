@@ -73,6 +73,8 @@ in particular:
   under 13. Because the report is public, please do not include anything you would not
   want others to see. If you would rather not use GitHub, you can leave a review on the
   Mac App Store instead.
+- More about Nomogram, including how to get in touch, is on its
+  [support page](https://anzhg.github.io/nomogram/).
 
 ## Changes to this policy
 
@@ -81,5 +83,5 @@ If this policy changes, the new version will be posted on this page with a new
 
 ## Contact
 
-Questions about privacy can be sent through the support page for the app concerned. For
-Nomogram, that is the [Nomogram support page](https://anzhg.github.io/nomogram/).
+Questions about privacy can be raised through the support page for the app you are using,
+which that app's section above links to.
