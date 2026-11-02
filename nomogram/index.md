@@ -10,5 +10,6 @@ it as Swift.
 - **Report a translation problem:** in Nomogram, choose Help > Report a Translation Problem…, or
   [open the form](report/translation/).
 - **Translations:** [the languages, and every string in each](translations/).
+- **Privacy:** [how your data is handled by the apps](/privacy/).
 
 You need a GitHub account to report.
